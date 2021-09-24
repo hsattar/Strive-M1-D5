@@ -107,7 +107,7 @@ Write a function called "reverseString" which programmatically reverses a given 
 console.log('\n\n---------- Answer Q7 --------\n')
 
 const reverseString = string => {
-
+    
 }
 
 /* EXERCISE 8
