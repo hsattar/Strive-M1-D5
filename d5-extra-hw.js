@@ -39,6 +39,38 @@ Create a function called "shoppingCartTotal" which calculates the total due to t
 
 console.log('\n\n---------- Answer Q2 --------\n')
 
+shoppingCart = [
+    {
+        price: 10.99,
+        name: 'Product',
+        id: 123,
+        qty: 1
+    }, 
+    {
+        price: 5.99,
+        name: 'Cheap Product',
+        id: 456,
+        qty: 6
+    }, 
+    {
+        price: 99.99,
+        name: 'Expensive Product',
+        id: 789,
+        qty: 1
+    }, 
+]
+
+let totalPrice = 0
+const shoppingCartTotal = () => {
+
+    for (item of shoppingCart) {
+        totalPrice += (item.price * item.qty)
+}
+
+}
+
+shoppingCartTotal()
+console.log(totalPrice)
 
 /* EXTRA 3
 In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
