@@ -159,7 +159,7 @@ let randomArray = [5, 6, 8, 'hi', 'boo', 16, 502]
 let sumOfNumbers = 0
 let totalNumbersInArray = 0
 
-const average = (arr) => {
+const average = arr => {
     for (let i = 0; i < arr.length; i++) {
         if (typeof arr[i] === 'number') {
             sumOfNumbers += arr[i]
@@ -177,6 +177,22 @@ Write a function called "longest" to find the longest string from a given array 
 */
 
 console.log('\n\n---------- Answer Q8 --------\n')
+
+arrayOfStrings = ['hello', 'test', 'world', 'longest', 'dnklndioinlewf']
+let longestStringLength = 0
+let longestString
+
+const longest = stringArray => {
+    for (let i = 0; i < arrayOfStrings.length; i++) {
+        if (stringArray[i].length > longestStringLength) {
+            longestStringLength = stringArray[i].length
+            longestString = stringArray[i]
+        }
+    }
+    console.log(longestString)
+}
+
+longest(arrayOfStrings)
 
 
 /* EXTRA 9
