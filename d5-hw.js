@@ -73,12 +73,32 @@ It should add the word "Strive" in front of the given string, but if the given s
 
 console.log('\n\n---------- Answer Q5 --------\n')
 
+const strivify = (string) =>  {
+    if (string) {
+
+    }
+}
+
 /* EXERCISE 6
 Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
 HINT: Modulus Operator
 */
 
 console.log('\n\n---------- Answer Q6 --------\n')
+
+const check3and7 = (positiveNumber) => {
+    if ((typeof positiveNumber === 'number') && (positiveNumber > 0)) {
+        if ((positiveNumber % 3 === 0) || (positiveNumber % 7 === 0)) {
+            console.log(`The number ${positiveNumber} is a multiple of 3 or 7`)
+        } else {
+            console.log(`The number ${positiveNumber} is not a multiple of 3 or 7`)
+        }
+    } else {
+        console.log('Choose A Positive Number')
+    }
+}
+
+check3and7(50)
 
 /* EXERCISE 7
 Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
