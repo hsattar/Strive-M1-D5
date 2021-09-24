@@ -92,7 +92,6 @@ const addToShoppingCart = (price, name, id, qty) => {
 
 addToShoppingCart(15, 'Test', 159, 3)
 console.log(shoppingCart.length)
-console.log(shoppingCart)
 
 /* EXTRA 4
 In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
@@ -100,6 +99,19 @@ Create a function called "maxShoppingCart" which receives the shoppingCart array
 */
 
 console.log('\n\n---------- Answer Q4 --------\n')
+
+let expensiveProduct = shoppingCart[0].price
+const maxShoppingCart= () => {
+    for (item of shoppingCart) {
+        if (item.price > expensiveProduct) {
+            expensiveProduct = item.name
+        }
+    }
+    console.log(expensiveProduct)
+}
+
+maxShoppingCart()
+
 
 
 /* EXTRA 5
