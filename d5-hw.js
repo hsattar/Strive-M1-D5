@@ -56,6 +56,16 @@ Write a function called "boundary" which accept an integer parameter n and retur
 
 console.log('\n\n---------- Answer Q4 --------\n')
 
+const boundry = n => {
+    if (((n >= 20) && (n <= 100)) || (n === 400) ) {
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(boundry(400))
+
 /* EXERCISE 5
 Write a function called "strivify" which accepts a string as a parameter.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
