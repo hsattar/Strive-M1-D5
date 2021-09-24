@@ -27,6 +27,15 @@ It should return the sum of those two values, but if the two values are the same
 
 console.log('\n\n---------- Answer Q2 --------\n')
 
+const crazySum = (num1, num2) => {
+    if (num1 === num2) {
+        return (num1 + num2) * 3
+    }
+    return num1 + num2
+}
+
+console.log(crazySum(5, 5))
+
 /* EXERCISE 3
 Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
 It should return triple their absolute difference if the given number is greater than 19.
