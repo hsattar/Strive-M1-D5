@@ -14,9 +14,7 @@ Write a function called "area" which receives 2 parameters (l1, l2) and calculat
 
 console.log('---------- Answer Q1 --------\n')
 
-const area = (l1, l2) => {
-    return l1 * l2
-}
+const area = (l1, l2) => {return l1 * l2}
 
 console.log(area(3, 5))
 
@@ -42,6 +40,15 @@ It should return triple their absolute difference if the given number is greater
 */
 
 console.log('\n\n---------- Answer Q3 --------\n')
+
+const crazyDiff = (number) => {
+    if (number > 19) {
+        return (number - 19) * 3
+    }
+    return 19 - number
+}
+
+console.log(crazyDiff(22))
 
 /* EXERCISE 4
 Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
