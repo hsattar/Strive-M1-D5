@@ -121,6 +121,11 @@ Create a function called "latestShoppingCart" which receives the shoppingCart ar
 
 console.log('\n\n---------- Answer Q5 --------\n')
 
+const latestShoppingCart = () => {
+    return console.log(shoppingCart[shoppingCart.length-1])
+}
+
+latestShoppingCart()
 
 /* EXTRA 6
 Create a function called "loopUntil" which receives an integer x between 0 and 9 as a parameter.
