@@ -41,7 +41,7 @@ It should return triple their absolute difference if the given number is greater
 
 console.log('\n\n---------- Answer Q3 --------\n')
 
-const crazyDiff = (number) => {
+const crazyDiff = number => {
     if (number > 19) {
         return (number - 19) * 3
     }
@@ -73,7 +73,7 @@ It should add the word "Strive" in front of the given string, but if the given s
 
 console.log('\n\n---------- Answer Q5 --------\n')
 
-const strivify = (string) =>  {
+const strivify = string =>  {
     if (string) {
 
     }
@@ -86,7 +86,7 @@ HINT: Modulus Operator
 
 console.log('\n\n---------- Answer Q6 --------\n')
 
-const check3and7 = (positiveNumber) => {
+const check3and7 = positiveNumber => {
     if ((typeof positiveNumber === 'number') && (positiveNumber > 0)) {
         if ((positiveNumber % 3 === 0) || (positiveNumber % 7 === 0)) {
             console.log(`The number ${positiveNumber} is a multiple of 3 or 7`)
@@ -106,6 +106,10 @@ Write a function called "reverseString" which programmatically reverses a given 
 
 console.log('\n\n---------- Answer Q7 --------\n')
 
+const reverseString = string => {
+
+}
+
 /* EXERCISE 8
 Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
@@ -123,6 +127,17 @@ Write a function called "giveMeRandom" which accepts a number n and returns an a
 */
 
 console.log('\n\n---------- Answer Q10 --------\n')
+
+let randomNumberArray = []
+const giveMeRandom = n => {
+    for (let i = 0; i < n; i++) {
+        let randomNumber = Math.floor(Math.random() * 11)
+        randomNumberArray.push(randomNumber)
+    }
+}
+
+giveMeRandom(5)
+console.log(randomNumberArray)
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
