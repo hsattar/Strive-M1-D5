@@ -122,6 +122,14 @@ Write a function called "cutString" which creates a new string without the first
 
 console.log('\n\n---------- Answer Q9 --------\n')
 
+let newString
+const cutString = string => {
+    newString = string.substr(1, string.length-2)
+}
+
+cutString('abcdefghijklmnopqrstuvwxyz')
+console.log(newString)
+
 /* EXERCISE 10
 Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
