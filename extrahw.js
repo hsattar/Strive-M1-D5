@@ -202,6 +202,19 @@ The function should return true if the emailContent string does not contain the 
 
 console.log('\n\n---------- Answer Q9 --------\n')
 
+let emailMessage = 'blah blah blah scam'
+
+const spamFilter = emailContent => {
+    
+    if ((emailContent.search(/spam/i) > 0) || (emailContent.search(/scam/i) > 0)) {
+        console.log(false)
+    } else {
+        console.log(true)
+    }
+}
+
+spamFilter(emailMessage)
+
 
 /* EXTRA 10
 Write a function that receives a date as a parameter and calculates the number of days passed since the given date.
