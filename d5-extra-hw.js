@@ -79,6 +79,20 @@ Create a function called "addToShoppingCart" which receives a new object, adds i
 
 console.log('\n\n---------- Answer Q3 --------\n')
 
+const addToShoppingCart = (price, name, id, qty) => {
+    let newItem = {
+        price: price,
+        name: name,
+        id: id, 
+        qty: qty
+    }
+
+    shoppingCart.push(newItem)
+}
+
+addToShoppingCart(15, 'Test', 159, 3)
+console.log(shoppingCart.length)
+console.log(shoppingCart)
 
 /* EXTRA 4
 In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
