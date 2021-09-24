@@ -122,7 +122,7 @@ Create a function called "latestShoppingCart" which receives the shoppingCart ar
 console.log('\n\n---------- Answer Q5 --------\n')
 
 const latestShoppingCart = () => {
-    return console.log(shoppingCart[shoppingCart.length-1])
+    console.log(shoppingCart[shoppingCart.length-1])
 }
 
 latestShoppingCart()
@@ -134,6 +134,20 @@ The function loops and prints a random number between 0 and 9 until the random n
 
 console.log('\n\n---------- Answer Q6 --------\n')
 
+let randNum = Math.floor(Math.random() * 10)
+let randNumIsBigger = 0
+
+const loopUntill = x => {
+    if (x >= 0 && x <=9) {
+        while (randNum > x) {
+            console.log()
+        }
+    } else {
+        console.log('Choose A Number Between 0 and 9')
+    }
+}
+
+loopUntill('5')
 
 /* EXTRA 7
 Write a function called "average" which receives an array and returns the average numerical value. The function automatically skips non-numeric entries in the array.
@@ -141,6 +155,22 @@ Write a function called "average" which receives an array and returns the averag
 
 console.log('\n\n---------- Answer Q7 --------\n')
 
+let randomArray = [5, 6, 8, 'hi', 'boo', 16, 502]
+let sumOfNumbers = 0
+let totalNumbersInArray = 0
+
+const average = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof arr[i] === 'number') {
+            sumOfNumbers += arr[i]
+            totalNumbersInArray++
+        }
+    }
+    console.log(sumOfNumbers / totalNumbersInArray)
+}
+
+
+average(randomArray)
 
 /* EXTRA 8
 Write a function called "longest" to find the longest string from a given array of strings.
